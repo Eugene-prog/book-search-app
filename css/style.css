@@ -105,8 +105,18 @@ body {
   letter-spacing: 0.1px;
 }
 
+.icon-search-small,
+.icon-bookmate {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
 .menu__list-item {
   margin-right: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .menu__list-item a {
