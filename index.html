@@ -4,7 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Book App</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top-inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./assets/images/logo.svg" alt="logo" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a href="#"><img class="menu__list-icon" src="./assets/images/search-icon.svg" /> Поиск книг</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#"><img class="menu__list-icon" src="./assets/images/bookmate-icon.png" /> Избранное</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="circle">
+            <span class="circle-value">2</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="search">
+      <div class="container"></div>
+    </section>
+    <section class="books">
+      <div class="container"></div>
+    </section>
+  </body>
 </html>
