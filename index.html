@@ -22,7 +22,7 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a href="#"><img class="menu__list-icon" src="./assets/images/search-icon.svg" /> Поиск книг</a>
+                <img class="menu__list-icon" src="./assets/images/search-icon.svg" /><a href="#"> Поиск книг</a>
               </li>
               <li class="menu__list-item">
                 <a href="#"><img class="menu__list-icon" src="./assets/images/bookmate-icon.png" /> Избранное</a>
@@ -37,10 +37,65 @@
     </header>
 
     <section class="search">
-      <div class="container"></div>
+      <div class="container">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+          <symbol id="icon-search" viewBox="0 0 32 32">
+            <path
+              d="M21.3021 19.2954H20.2488L19.8754 18.9354C21.4754 17.0688 22.3021 14.5221 21.8488 11.8154C21.2221 8.10876 18.1287 5.14876 14.3954 4.69543C8.75542 4.0021 4.00875 8.74876 4.70208 14.3888C5.15542 18.1221 8.11542 21.2154 11.8221 21.8421C14.5288 22.2954 17.0754 21.4688 18.9421 19.8688L19.3021 20.2421V21.2954L24.9688 26.9621C25.5154 27.5088 26.4088 27.5088 26.9554 26.9621C27.5021 26.4154 27.5021 25.5221 26.9554 24.9754L21.3021 19.2954ZM13.3021 19.2954C9.98208 19.2954 7.30208 16.6154 7.30208 13.2954C7.30208 9.97543 9.98208 7.29543 13.3021 7.29543C16.6221 7.29543 19.3021 9.97543 19.3021 13.2954C19.3021 16.6154 16.6221 19.2954 13.3021 19.2954Z"
+              fill="#FAFAFA"
+            />
+          </symbol>
+        </svg>
+        <div class="search-box">
+          <input type="text" placeholder="Найти книгу или автора...." />
+          <button class="icon-btn" type="button">
+            <svg class="icon-search">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </section>
+
     <section class="books">
-      <div class="container"></div>
+      <div class="container">
+        <div class="books-title">
+          <h1>Найдено книг – 10</h1>
+        </div>
+
+        <div class="books-cards">
+          <div class="book-card" data-category="1">
+            <div class="book-card__image">
+              <img class="card__image" src="./assets/images/books-1.png" alt="Название книги" />
+            </div>
+            <div class="book-card__details">
+              <p class="book-card__type">Action & Adventure</p>
+              <h2 class="book-card__title">Властелин колец</h2>
+              <p class="book-card__author">J.R.R. Tolkien</p>
+              <button class="book-card__bookmark">
+                <svg class="icon">
+                  <use xlink:href="#bookmark"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="book-card" data-category="1">
+            <div class="book-card__image">
+              <img class="card__image" src="./assets/images/books-2.png" alt="Название книги" />
+            </div>
+            <div class="book-card__details">
+              <p class="book-card__type">Action & Adventure</p>
+              <h2 class="book-card__title">Властелин колец</h2>
+              <p class="book-card__author">J.R.R. Tolkien</p>
+              <button class="book-card__bookmark">
+                <svg class="icon">
+                  <use xlink:href="#bookmark"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
