@@ -63,6 +63,7 @@ body {
   --color-white: #fafafa;
   --color-gray: #dedede;
   --color-black: #1e1e1e;
+  --color-dark-gray: #b8b8b8;
   --color-black-font: #121212;
   --main-font: 'Open sans', sans-serif;
 }
@@ -89,8 +90,14 @@ body {
   justify-content: space-between;
 }
 
+.header__top-menu {
+  display: flex;
+  justify-content: end;
+}
+
 .menu {
   display: flex;
+  justify-content: end;
 }
 
 .menu__list {
@@ -110,6 +117,7 @@ body {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .menu__list-item {
@@ -123,9 +131,9 @@ body {
   text-decoration: none;
 }
 
-.menu__list-item:hover {
+.menu__list-item a:hover {
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .circle {
@@ -185,7 +193,9 @@ body {
 }
 
 .books-cards {
+  margin-top: 18px;
   display: flex;
+  /* flex-wrap: wrap; */
 }
 
 .books-cards > * {
@@ -201,7 +211,9 @@ body {
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-  border: #121212 1px solid;
+  background-color: var(--color-dark-gray);
+  /* border: #121212 1px solid; */
+  border-radius: 8px;
 }
 
 .book-card__image {
@@ -209,14 +221,24 @@ body {
 }
 
 .book-card__details {
-  margin-left: 12px;
-  /* background-color: #121212; */
+  /* margin-left: 12px; */
+  color: white;
+  background-color: #121212;
+  border-radius: 0 0 8px 8px;
 }
 
 .book-card__bookmark {
   width: 36px;
   height: 32px;
   border-radius: 6px;
-  border: 1px solid #fafafa;
-  background: #fff;
+  /* border: 1px solid #fafafa; */
+  /* background: #fff; */
+}
+
+.book-card__details p {
+  margin-left: 12px;
+}
+
+.book-card__details h2 {
+  margin-left: 12px;
 }
