@@ -12,8 +12,8 @@
     />
     <title>Book App</title>
   </head>
-<body>
-     <header class="header">
+  <body>
+    <header class="header">
       <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
         <symbol id="icon-search-small" viewBox="0 0 20 20">
           <path
@@ -63,35 +63,43 @@
 
     <section class="search">
       <div class="container">
-        <h1>The Lord of the Rings</h1>
-        <img src="./assets/images/book-info.png" alt="book image">
+        <h1 class="book-info-title">The Lord of the Rings</h1>
+        <div class="book-info-container">
+          <div class="book-info-image">
+            <img class="book-image" src="./assets/images/book-info.png" alt="book image" />
+          </div>
           <div class="book-info">
-            <p class="book-info__author">Автор: <span>J.R.R. Tolkien</span></p>
-              <p class="book-info__category">Category: <span>Action & Adventure</span></p>
-              <p class="book-info__first-publish">Первая публикация: <span>1954</span></p>
-              <p class="book-info__pages">Число страниц: <span>1193</span></p>
-              <button class="btn-add-favorite">
-                В избранное
-              </button>
-           </div>
+            <p class="book-info__author info">Автор: <span>J.R.R. Tolkien</span></p>
+            <p class="book-info__category info">Category: <span>Action & Adventure</span></p>
+            <p class="book-info__first-publish info">Первая публикация: <span>1954</span></p>
+            <p class="book-info__pages">Число страниц: <span>1193</span></p>
+            <button class="btn-add-favorite">В избранное</button>
+          </div>
+        </div>
       </div>
     </section>
     <section class="discription">
-       <div class="container">
-        <h3 class="discription-title">Описание: </h3>
-        <p>A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin. It was first published on August 1, 1996. The novel won the 1997 Locus Award and was nominated for both the 1997 Nebula Award and the 1997 World Fantasy Award. The novella Blood of the Dragon, comprising the Daenerys Targaryen chapters from the novel, won the 1997 Hugo Award for Best Novella. In January 2011, the novel became a New York Times Bestseller and reached No. 1 on the list in July 2011.</p>
-       </div>
+      <div class="container">
+        <h3 class="discription-title">Описание:</h3>
+        <p class="desription-text">
+          A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American
+          author George R. R. Martin. It was first published on August 1, 1996. The novel won the 1997 Locus Award and
+          was nominated for both the 1997 Nebula Award and the 1997 World Fantasy Award. The novella Blood of the
+          Dragon, comprising the Daenerys Targaryen chapters from the novel, won the 1997 Hugo Award for Best Novella.
+          In January 2011, the novel became a New York Times Bestseller and reached No. 1 on the list in July 2011.
+        </p>
+      </div>
     </section>
-     <section class="tags">
-       <div class="container">  
-        <h3 class="tags-title">Тэги: </h3>
+    <section class="tags">
+      <div class="container">
+        <h3 class="tags-title">Тэги:</h3>
         <div class="tags-button-container">
           <button class="tags-button">Fiction</button>
           <button class="tags-button">Fantasy fiction</button>
           <button class="tags-button">English Fantasy fiction</button>
           <button class="tags-button">Wizards</button>
         </div>
-       </div>
-      </section>   
-</body>
+      </div>
+    </section>
+  </body>
 </html>

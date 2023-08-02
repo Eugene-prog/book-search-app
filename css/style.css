@@ -65,6 +65,7 @@ body {
   --color-black: #1e1e1e;
   --color-dark-gray: #b8b8b8;
   --color-black-font: #121212;
+  --color-black-btn: #0d0d0d;
   --main-font: 'Open sans', sans-serif;
 }
 
@@ -312,7 +313,7 @@ p {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; 
+  line-height: 160%;
 }
 
 p span {
@@ -326,6 +327,62 @@ p span {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; 
+  line-height: 20px;
   letter-spacing: 0.1px;
+}
+
+.book-info-container {
+  margin-top: 21px;
+  display: flex;
+}
+
+.book-info {
+  margin-left: 20px;
+}
+
+.book-info-title {
+  color: var(--color-black-font);
+  font-family: Open Sans, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.info {
+  margin-bottom: 10px;
+}
+
+.btn-add-favorite {
+  margin-top: 23px;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  background-color: var(--color-black-btn);
+  width: 161px;
+  height: 40px;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.discription-title {
+  margin-top: 15px;
+}
+
+.desription-text {
+  margin-top: 10px;
+}
+
+.tags-title {
+  margin-top: 21px;
+}
+
+.tags-button-container {
+  margin-top: 14px;
+}
+
+.tags-button-container :not(:first-child) {
+  margin-left: 10px;
 }
