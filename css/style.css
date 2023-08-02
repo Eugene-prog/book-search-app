@@ -329,6 +329,11 @@ p span {
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.1px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  padding: 6px 8px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .book-info-container {
@@ -373,10 +378,21 @@ p span {
 
 .desription-text {
   margin-top: 10px;
+  color: var(--color-black-font);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
 }
 
+.discription-title,
 .tags-title {
   margin-top: 21px;
+  color: var(--color-black-font);
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 32px;
 }
 
 .tags-button-container {
