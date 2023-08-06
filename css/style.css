@@ -427,3 +427,47 @@ p span {
   font-weight: 600;
   line-height: 32px;
 }
+
+@media (max-width: 620px) {
+  .book-card:nth-child(3n) {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .header__top-inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .header__top-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .books-cards {
+    justify-content: center;
+  }
+
+  .menu__list {
+    margin-top: 20px;
+  }
+
+  .circle {
+    margin-top: 10px;
+  }
+
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .pagination a {
+    margin-top: 15px;
+  }
+}
