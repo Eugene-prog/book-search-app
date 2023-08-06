@@ -55,9 +55,9 @@ body {
   width: 100%;
 }
 
-li a:visited {
+/* li a:visited {
   color: inherit;
-}
+} */
 
 :root {
   --color-white: #fafafa;
@@ -69,6 +69,10 @@ li a:visited {
   --main-font: 'Open sans', sans-serif;
 }
 
+a {
+  color: #121212;
+}
+
 body {
   background-color: var(--color-white);
   font-family: var(--main-font);
@@ -78,7 +82,9 @@ body {
 
 .container {
   max-width: 600px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header {
@@ -98,7 +104,7 @@ body {
 
 .menu {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .menu__list {
@@ -216,12 +222,22 @@ body {
   border-radius: 8px;
 }
 
+.book-card:nth-child(3n) {
+  margin-right: 0;
+}
+
 .book-card__image {
+  position: relative;
   margin-top: 11px;
 }
 
+.card__image {
+  margin-bottom: -20px;
+}
+
 .book-card__details {
-  /* margin-left: 12px; */
+  z-index: 99;
+  height: 288px;
   width: 180px;
   color: white;
   background-color: #121212;
@@ -231,9 +247,9 @@ body {
 .book-card__bookmark {
   width: 36px;
   height: 32px;
-  margin-left: 10px;
-  margin-top: 38px;
-  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-top: 46px;
+
   border-radius: 6px;
   background-color: #121212;
   border: 1px solid #fafafa;
