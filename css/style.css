@@ -471,12 +471,12 @@ p span {
     margin-right: 0;
   }
 
-  .menu__list {
+  .menu {
     margin-top: 20px;
   }
 
   .circle {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .pagination {
@@ -496,6 +496,6 @@ p span {
   }
 
   .tags-button {
-    margin-bottom: 10px;
+    margin-bottom: 10gitpx;
   }
 }
