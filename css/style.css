@@ -53,6 +53,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  min-width: 320px;
 }
 
 /* li a:visited {
@@ -76,7 +77,6 @@ a {
 body {
   background-color: var(--color-white);
   font-family: var(--main-font);
-  min-width: 320px;
   overflow-x: hidden;
 }
 
@@ -237,7 +237,7 @@ body {
 
 .book-card__details {
   z-index: 99;
-  height: 288px;
+  height: 156px;
   width: 180px;
   color: white;
   background-color: #121212;
@@ -414,8 +414,8 @@ p span {
   margin-top: 14px;
 }
 
-.tags-button-container :not(:first-child) {
-  margin-left: 10px;
+.tags-button {
+  margin-right: 10px;
 }
 
 .favorite-books-title h1 {
@@ -428,13 +428,26 @@ p span {
   line-height: 32px;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 620px) and (min-width: 430px) {
+  .books-cards {
+    justify-content: center;
+  }
+
   .book-card:nth-child(3n) {
     margin-right: 20px;
   }
+
+  .tags-button-container {
+    flex-wrap: wrap;
+    align-items: start;
+  }
+
+  .tags-button {
+    margin-bottom: 10px;
+  }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 429px) {
   .header__top-inner {
     display: flex;
     flex-direction: column;
@@ -449,7 +462,13 @@ p span {
   }
 
   .books-cards {
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .books-cards > * {
+    margin-right: 0;
   }
 
   .menu__list {
@@ -469,5 +488,14 @@ p span {
 
   .pagination a {
     margin-top: 15px;
+  }
+
+  .tags-button-container {
+    flex-wrap: wrap;
+    align-items: start;
+  }
+
+  .tags-button {
+    margin-bottom: 10px;
   }
 }
